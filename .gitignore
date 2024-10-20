@@ -3,3 +3,21 @@ __pycache__
 .sesskey
 .DS_Store
 .vscode
+
+
+# FAISS index files
+data/faiss_index/*.faiss
+data/faiss_index/*.pkl
+
+# Large data files
+data/*.csv
+cache/*.json
+
+# Add these lines to ignore common large file types
+*.log
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.iso
+*.bin
