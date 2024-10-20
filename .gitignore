@@ -3,6 +3,7 @@ __pycache__
 .sesskey
 .DS_Store
 .vscode
+.env
 
 
 # FAISS index files
