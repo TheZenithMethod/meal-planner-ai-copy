@@ -1,0 +1,59 @@
+#### Zenith
+
+
+#### Zenith Formula
+
+Step 1 - BMR Calculation
+
+For male
+10 * weight + 6.25 * height - 5 * age + 5
+
+For Female
+10 * weight + 6.25 * height - 5 * age - 161
+
+Step 2 - Total Calories
+
+For Sedentary
+calories = bmr * 1.2
+For Light
+calories = bmr * 1.375
+For Moderate
+calories = bmr * 1.55
+For Active
+calories = bmr * 1.725
+For Very Active
+calories = bmr * 1.9
+
+Step 3 - Adjust Calorie As per Goal
+
+For Maintain Weight
+adjusted_calorie = calorie
+For Weight Loss
+adjusted_calorie = calorie - 500
+For Fast Weight Loss
+adjusted_calorie = calorie - 1000
+For Weight Gain
+adjusted_calorie = calorie + 500
+For Fast Weight Gain
+adjusted_calorie = calorie + 1000
+
+Step 4 - Calculate Micronutrients
+
+Protein
+2g per kg of total body weight
+Example, if body weight = 80kg, then protein will be protein = 80 * 2 = 160g
+protein_calorie = protein_in_gram * 4
+
+Fats
+For activity Sedentary|Light|Moderate
+fats_calorie = 0.15 * adjusted_calorie
+For activity Active|Very Active
+If adjusted_calorie > 2500
+fats_calorie = 0.2 * adjusted_calorie
+If adjusted_calorie <= 2500
+fats_calorie = 0.15 * adjusted_calorie
+Now, fats_in_gram = fats_calorie / 9
+
+Carbs
+carbs_calorie = adjusted_calorie - protein_calorie - fats_calorie
+carbs_in_gram = cabrs_calorie / 4
