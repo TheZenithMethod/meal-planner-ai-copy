@@ -22,7 +22,6 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.schema import Document, HumanMessage, SystemMessage
 from langchain_community.docstore.in_memory import InMemoryDocstore
 from langchain_community.retrievers import BM25Retriever
-from sklearn.feature_extraction.text import TfidfVectorizer
 import faiss  # Import faiss directly
 from tqdm.asyncio import tqdm
 import concurrent.futures
