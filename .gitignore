@@ -6,14 +6,6 @@ __pycache__
 .env
 
 
-# FAISS index files
-data/faiss_index/*.faiss
-data/faiss_index/*.pkl
-
-# Large data files
-data/*.csv
-cache/*.json
-
 # Add these lines to ignore common large file types
 *.log
 *.zip
