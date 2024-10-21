@@ -1,3 +1,7 @@
+import dotenv
+dotenv.load_dotenv(override=True)
+
+
 import os
 import pprint
 import sys
@@ -23,15 +27,12 @@ import faiss  # Import faiss directly
 from tqdm.asyncio import tqdm
 import concurrent.futures
 import threading
-import dotenv
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.output_parsers import PydanticOutputParser
 from config.cache import diskcache
 
 import json
 from tabulate import tabulate
-
-dotenv.load_dotenv()
 
 # Constants
 DATA_FOLDER = "data"

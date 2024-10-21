@@ -1,3 +1,6 @@
+import dotenv
+dotenv.load_dotenv(override=True)
+
 import json
 from fasthtml.common import *
 import pandas as pd
